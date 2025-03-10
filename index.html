@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culinary Canvas | Modern Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-mode">
+    <header>
+      <nav>
+        <div class="logo"><span>Culinary</span>Canvas</div>
+        <div class="nav-links">
+          <a href="#featured">Recipes</a>
+          <a href="#categories">Categories</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun active"></i>
+        </div>
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="fade-in">
+          Discover <span class="highlight">Culinary</span> Inspirations
+        </h1>
+        <p class="fade-in delay-1">
+          Explore thousands of chef-crafted recipes to elevate your cooking
+          experience
+        </p>
+        <div class="search-container fade-in delay-2">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for recipes..."
+          />
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <a href="#featured" class="cta-button fade-in delay-3"
+          >Explore Recipes</a
+        >
+      </div>
+    </section>
+
+    <section id="featured" class="featured-recipes">
+      <div class="section-header">
+        <h2>Featured Recipes</h2>
+        <p>Our most loved and top-rated dishes from around the world</p>
+      </div>
+      <div class="recipe-grid">
+        <!-- Recipe cards will be added dynamically with JavaScript -->
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <div class="section-header">
+        <h2>Browse Categories</h2>
+        <p>Find recipes by your favorite cuisine or meal type</p>
+      </div>
+      <div class="category-container">
+        <div class="category-card" data-category="breakfast">
+          <div class="category-icon"><i class="fas fa-coffee"></i></div>
+          <h3>Breakfast</h3>
+        </div>
+        <div class="category-card" data-category="lunch">
+          <div class="category-icon"><i class="fas fa-hamburger"></i></div>
+          <h3>Lunch</h3>
+        </div>
+        <div class="category-card" data-category="dinner">
+          <div class="category-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Dinner</h3>
+        </div>
+        <div class="category-card" data-category="dessert">
+          <div class="category-icon"><i class="fas fa-birthday-cake"></i></div>
+          <h3>Desserts</h3>
+        </div>
+        <div class="category-card" data-category="vegetarian">
+          <div class="category-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Vegetarian</h3>
+        </div>
+        <div class="category-card" data-category="seafood">
+          <div class="category-icon"><i class="fas fa-fish"></i></div>
+          <h3>Seafood</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Our Culinary Journey</h2>
+          <p>
+            Culinary Canvas was born from a passion for exceptional food and the
+            belief that cooking should be an accessible art form for everyone.
+            Our team of chefs and food enthusiasts curate recipes that balance
+            tradition with innovation.
+          </p>
+          <p>
+            Every recipe is meticulously tested in our kitchens to ensure that
+            you can recreate the magic at home. We believe in sustainable
+            cooking, seasonal ingredients, and the joy that comes from sharing a
+            wonderful meal.
+          </p>
+          <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2670&auto=format&fit=crop"
+            alt="Our Team"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2>Join Our Culinary Community</h2>
+        <p>
+          Subscribe to receive weekly recipe inspirations, cooking tips, and
+          exclusive content
+        </p>
+      </div>
+      <div class="subscription-form">
+        <form id="newsletter-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <button type="submit" class="submit-btn">
+            Subscribe <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div id="form-message"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo"><span>Culinary</span>Canvas</div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="#featured">Recipes</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Culinary Canvas. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Recipe Modal -->
+    <div class="recipe-modal" id="recipe-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <!-- Recipe details will be populated here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
